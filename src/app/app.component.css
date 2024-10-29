@@ -1,0 +1,132 @@
+@media (max-width: 600px) {
+    .chat-container {
+        width: 90%;
+    }
+
+    .chat-messages-container {
+        width: 100%;
+    }
+
+    .respostas-container {
+        width: 100%;
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 150%;
+    }
+
+    .user-input {
+        flex-direction: column;
+    }
+
+    #messageInput {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+
+.chat-container {
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 18px;
+    border-radius: 5px;
+}
+
+.chat-messages-container {
+    width: 450px;
+    margin: 0 auto;
+    border: 2px solid #000000;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.respostas-container {
+    width: 150px;
+    height: 30px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    border: 2px solid #000;
+    padding: 10px;
+}
+
+.chat-messages {
+    height: 400px;
+    overflow-y: scroll;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.messages-atendente  {
+    text-align: left;
+    float: left;
+    clear: both;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.messages-cliente  {
+    text-align: right;
+    float: right;
+    clear: both;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title {
+    color: #9400D3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 180%;
+}
+
+.send {
+    font-weight: bold;
+}
+
+.user-input {
+    display: flex;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#messageInput {
+    flex-grow: 1;
+    padding: 10px;
+}
+
+button {
+    background-color: #4CAF50; 
+    color: white;
+    border: 1px solid #000;
+    padding: 10px 30px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e8e41;
+    transform: scale(1.05);
+    border: 2px solid #000;
+}

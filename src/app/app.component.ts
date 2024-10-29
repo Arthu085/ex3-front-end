@@ -1,13 +1,21 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ex3-front-end';
+  title = 'Chat App';
+  messages: { sender: string; text: string }[] = [];
+  newMessage: string = '';
+
+  sendMessage(message: string) {
+    this.messages.push({ sender: 'Usuário', text: message });
+    this.newMessage = ''; // Clear the input field
+    // Simulate a bot response
+    setTimeout(() => {
+      this.messages.push({ sender: 'Bot', text: 'Olá! Como posso ajudar?' });
+    }, 1000);
+  }
 }
